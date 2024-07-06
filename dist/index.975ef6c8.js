@@ -36011,7 +36011,7 @@ const Body = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: "px-4 py-[0.6rem] text-white bg-[#c26100] rounded-r-md border-none outline-none box-border shadow-xl ml-[-4px] hover:bg-[#016034]",
                             onClick: ()=>{
-                                const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue));
+                                const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
                                 setFilteringRestaurent(inputFilter);
                                 console.log(inputValue);
                             },
@@ -36064,6 +36064,7 @@ const Body = ()=>{
                 columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mt-80",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/components/Body.js",
                     lineNumber: 137,
