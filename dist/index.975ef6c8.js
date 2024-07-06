@@ -36015,6 +36015,11 @@ const Body = ()=>{
                                 setFilteringRestaurent(inputFilter);
                                 console.log(inputValue);
                             },
+                            onTouchStart: ()=>{
+                                const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
+                                setFilteringRestaurent(inputFilter);
+                                console.log(inputValue);
+                            },
                             children: "search"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
@@ -36044,35 +36049,35 @@ const Body = ()=>{
                             restObj: restaurant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 128,
+                            lineNumber: 133,
                             columnNumber: 25
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentCardDefault.default), {
                             restObj: restaurant
                         }, restaurant.info.id, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 130,
+                            lineNumber: 135,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 123,
+                        lineNumber: 128,
                         columnNumber: 24
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 118,
+                lineNumber: 123,
                 columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "mt-80",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 137,
+                    lineNumber: 142,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 136,
+                lineNumber: 141,
                 columnNumber: 13
             }, undefined)
         ]

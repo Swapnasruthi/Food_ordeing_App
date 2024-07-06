@@ -88,7 +88,12 @@ const Body = ()=>{
                             const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
                             setFilteringRestaurent(inputFilter);
                             console.log(inputValue);
-                       }} >
+                       }} 
+                    onTouchStart={()=>{
+                        const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
+                        setFilteringRestaurent(inputFilter);
+                        console.log(inputValue);
+                   }}>
                    
                     search
                 </button>
