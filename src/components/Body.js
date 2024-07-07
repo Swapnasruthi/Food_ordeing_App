@@ -80,7 +80,7 @@ const Body = ()=>{
                 <input 
                     type="text"
                     placeholder="Search a restaurent you want.."
-                    className="p-2 w-[30rem] border rounded-l-md border-[#aabcca] box-border border-r-0 shadow-xl focus:border-[#c26100]"
+                    className="p-2 w-[30rem] border rounded-l-md border-[#aabcca] box-border border-r-0 shadow-xl outline-none focus:border-[#c26100]"
                     value={inputValue}
                     //tracking the input value using the onchange function.
                     onChange={(e)=>{
