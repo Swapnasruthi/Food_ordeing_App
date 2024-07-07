@@ -68,7 +68,9 @@ const Body = ()=>{
         return <Shimmer/>;
     }
 
-   
+    const searchData = ()=>{
+
+    }
     
     return (
         
@@ -78,11 +80,11 @@ const Body = ()=>{
                 <input 
                     type="text"
                     placeholder="Search a restaurent you want.."
-                    className="p-2 w-[30rem] border rounded-l-md border-[#aabcca] box-border border-r-0 shadow-xl outline-none focus:border-[#c26100]"
+                    className=""
                     value={inputValue}
                     //tracking the input value using the onchange function.
                     onChange={(e)=>{
-                        e.preventDefault();
+                        
                         setInputValue(e.target.value);
                          
                     }}
@@ -91,7 +93,7 @@ const Body = ()=>{
                     className="px-4 py-[0.6rem] text-white bg-[#c26100] rounded-r-md border-none outline-none box-border shadow-xl ml-[-4px] hover:bg-[#016034]"
                     onClick={()=>{
                            
-                            const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
+                            const inputFilter = listOfRestaurent.filter((res)=>(res.info.name.toLowerCase().includes(inputValue.toLowerCase().trim())|| res?.info?.cuisines.join(',').toLowerCase().includes(inputValue.toLowerCase().trim())));
                             setFilteringRestaurent(inputFilter);
                             console.log(inputValue);
                        }} 

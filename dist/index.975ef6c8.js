@@ -35987,6 +35987,7 @@ const Body = ()=>{
         lineNumber: 68,
         columnNumber: 16
     }, undefined);
+    const searchData = ()=>{};
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body w-full m-auto",
         children: [
@@ -35998,40 +35999,39 @@ const Body = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             type: "text",
                             placeholder: "Search a restaurent you want..",
-                            className: "p-2 w-[30rem] border rounded-l-md border-[#aabcca] box-border border-r-0 shadow-xl outline-none focus:border-[#c26100]",
+                            className: "",
                             value: inputValue,
                             //tracking the input value using the onchange function.
                             onChange: (e)=>{
-                                e.preventDefault();
                                 setInputValue(e.target.value);
                             }
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 78,
+                            lineNumber: 80,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: "px-4 py-[0.6rem] text-white bg-[#c26100] rounded-r-md border-none outline-none box-border shadow-xl ml-[-4px] hover:bg-[#016034]",
                             onClick: ()=>{
-                                const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
+                                const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.toLowerCase().trim()) || res?.info?.cuisines.join(",").toLowerCase().includes(inputValue.toLowerCase().trim()));
                                 setFilteringRestaurent(inputFilter);
                                 console.log(inputValue);
                             },
                             children: "search"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 90,
+                            lineNumber: 92,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 77,
+                    lineNumber: 79,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 76,
+                lineNumber: 78,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36046,41 +36046,41 @@ const Body = ()=>{
                             restObj: restaurant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 135,
+                            lineNumber: 137,
                             columnNumber: 25
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentCardDefault.default), {
                             restObj: restaurant
                         }, restaurant.info.id, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 137,
+                            lineNumber: 139,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 130,
+                        lineNumber: 132,
                         columnNumber: 24
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 125,
+                lineNumber: 127,
                 columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "mt-80",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 144,
+                    lineNumber: 146,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 143,
+                lineNumber: 145,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 75,
+        lineNumber: 77,
         columnNumber: 9
     }, undefined);
 };
