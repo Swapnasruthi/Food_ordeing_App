@@ -27439,7 +27439,7 @@ const Header = ()=>{
                             className: "mr-5 font-bold text-xs md:text-base ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                className: "text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                                className: "transition text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                                 children: " Home "
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27455,7 +27455,7 @@ const Header = ()=>{
                             className: "mr-5 font-bold text-xs md:text-base ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
-                                className: "text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                                className: "transition text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                                 children: " Contact Us "
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27474,7 +27474,7 @@ const Header = ()=>{
                                 className: "text-xs text-gray-700 md:text-base",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                                        className: "transition text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                                         children: "Cart"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
@@ -27506,7 +27506,7 @@ const Header = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                            className: "transition login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                             onClick: ()=>{
                                 btnName === "login" ? setBtnName("logout") : setBtnName("login");
                             },
@@ -35999,7 +35999,7 @@ const Body = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                             type: "text",
                             placeholder: "Search a restaurent you want..",
-                            className: "",
+                            className: "p-2 w-[30rem] border rounded-l-md border-[#aabcca] box-border border-r-0 shadow-xl outline-none focus:border-[#c26100]",
                             value: inputValue,
                             //tracking the input value using the onchange function.
                             onChange: (e)=>{
