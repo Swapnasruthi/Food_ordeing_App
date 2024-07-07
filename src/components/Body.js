@@ -54,6 +54,9 @@ const Body = ()=>{
 
     }
 
+    const handleSearch = ()=> {
+
+    }
 
     const onlineStatus = useOnlineStatus();
     if (onlineStatus == false){
@@ -79,21 +82,20 @@ const Body = ()=>{
                     value={inputValue}
                     //tracking the input value using the onchange function.
                     onChange={(e)=>{
+                        e.preventDefault();
                         setInputValue(e.target.value);
+                         
                     }}
                 />
                 <button 
                     className="px-4 py-[0.6rem] text-white bg-[#c26100] rounded-r-md border-none outline-none box-border shadow-xl ml-[-4px] hover:bg-[#016034]"
                     onClick={()=>{
+                           
                             const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
                             setFilteringRestaurent(inputFilter);
                             console.log(inputValue);
                        }} 
-                    onTouchStart={()=>{
-                        const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
-                        setFilteringRestaurent(inputFilter);
-                        console.log(inputValue);
-                   }}>
+                  >
                    
                     search
                 </button>

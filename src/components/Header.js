@@ -24,15 +24,15 @@ export const Header= ()=>{
             </div>
 
             <div className="flex items-center justify-center">
-                <ul className="flex justify-center p-2 mr-1 ">
+                <ul className="flex justify-center p-2 mr-2 ">
                     {/* <li className="mr-5 text-gray-700 ">
                         Online Status : {onlineStatus? "✅" :"🔴"}
                     </li> */}
-                    <li className="mr-5 font-bold text-xs md:text-base">
-                        <Link to="/" className="text-gray-700 "> Home </Link>
+                    <li className="mr-5 font-bold text-xs md:text-base ">
+                        <Link to="/" className="text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white"> Home </Link>
                     </li>
-                    <li className="mr-5 font-bold text-xs md:text-base">
-                        <Link  to="/contact" className="text-gray-700"> Contact Us </Link>
+                    <li className="mr-5 font-bold text-xs md:text-base ">
+                        <Link  to="/contact" className="text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white"> Contact Us </Link>
                       
                     </li>
                     {/* <li className="mr-5  text-lg">
@@ -43,19 +43,19 @@ export const Header= ()=>{
                     </li> */}
                     <li className="mr-5 font-bold text-xs md:text-base">
                         <Link to="./cart" className="text-xs text-gray-700 md:text-base">
-                        <span className="text-xs md:text-base">Cart</span> 
+                        <span className="text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white">Cart</span> 
                         {cartItems.length > 0 ? <i class="fa-solid fa-cart-shopping text-[#c26100]"></i> :
                         <i class="fa-solid fa-cart-shopping"></i>}
                         {/* ({cartItems.length} items) */}
                         </Link>
                     </li>
-                    <button className="login font-bold text-gray-700 text-xs md:text-base"
+                    <button className="login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white"
                     onClick={()=> {
                         (btnName === "login")?
                         setBtnName("logout"):
                         setBtnName("login");
                     }}
-                    >{btnName+" "} </button>
+                    >{btnName} </button>
                     {/* <li className="ml-5 mr-2 font-bold text-lg">
                         {data.loggedUserId}
                     </li> */}

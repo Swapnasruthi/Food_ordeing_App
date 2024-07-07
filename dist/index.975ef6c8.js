@@ -27433,13 +27433,13 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex items-center justify-center",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: "flex justify-center p-2 mr-1 ",
+                    className: "flex justify-center p-2 mr-2 ",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "mr-5 font-bold text-xs md:text-base",
+                            className: "mr-5 font-bold text-xs md:text-base ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                className: "text-gray-700 ",
+                                className: "text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                                 children: " Home "
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27452,10 +27452,10 @@ const Header = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "mr-5 font-bold text-xs md:text-base",
+                            className: "mr-5 font-bold text-xs md:text-base ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
-                                className: "text-gray-700",
+                                className: "text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                                 children: " Contact Us "
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27474,7 +27474,7 @@ const Header = ()=>{
                                 className: "text-xs text-gray-700 md:text-base",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "text-xs md:text-base",
+                                        className: "text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                                         children: "Cart"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
@@ -27506,12 +27506,12 @@ const Header = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "login font-bold text-gray-700 text-xs md:text-base",
+                            className: "login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
                             onClick: ()=>{
                                 btnName === "login" ? setBtnName("logout") : setBtnName("login");
                             },
                             children: [
-                                btnName + " ",
+                                btnName,
                                 " "
                             ]
                         }, void 0, true, {
@@ -35972,18 +35972,19 @@ const Body = ()=>{
         setListOfRestaurent(resData);
         setFilteringRestaurent(resData);
     };
+    const handleSearch = ()=>{};
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     if (onlineStatus == false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "Looks like you're offline, check your Internet Connection!"
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 60,
+        lineNumber: 63,
         columnNumber: 16
     }, undefined);
     //conditional rendering.
     if (listOfRestaurent.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 65,
+        lineNumber: 68,
         columnNumber: 16
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36001,11 +36002,12 @@ const Body = ()=>{
                             value: inputValue,
                             //tracking the input value using the onchange function.
                             onChange: (e)=>{
+                                e.preventDefault();
                                 setInputValue(e.target.value);
                             }
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 75,
+                            lineNumber: 78,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36015,26 +36017,21 @@ const Body = ()=>{
                                 setFilteringRestaurent(inputFilter);
                                 console.log(inputValue);
                             },
-                            onTouchStart: ()=>{
-                                const inputFilter = listOfRestaurent.filter((res)=>res.info.name.toLowerCase().includes(inputValue.trim()));
-                                setFilteringRestaurent(inputFilter);
-                                console.log(inputValue);
-                            },
                             children: "search"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 85,
+                            lineNumber: 90,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 74,
+                    lineNumber: 77,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 73,
+                lineNumber: 76,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36049,41 +36046,41 @@ const Body = ()=>{
                             restObj: restaurant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 133,
+                            lineNumber: 135,
                             columnNumber: 25
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentCardDefault.default), {
                             restObj: restaurant
                         }, restaurant.info.id, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 135,
+                            lineNumber: 137,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 128,
+                        lineNumber: 130,
                         columnNumber: 24
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 123,
+                lineNumber: 125,
                 columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "mt-80",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 142,
+                    lineNumber: 144,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 141,
+                lineNumber: 143,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 72,
+        lineNumber: 75,
         columnNumber: 9
     }, undefined);
 };
