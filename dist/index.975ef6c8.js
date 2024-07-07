@@ -27439,7 +27439,7 @@ const Header = ()=>{
                             className: "mr-5 font-bold text-xs md:text-base ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                className: "transition text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                                className: "transition text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-md hover:text-white",
                                 children: " Home "
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27455,7 +27455,7 @@ const Header = ()=>{
                             className: "mr-5 font-bold text-xs md:text-base ",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
-                                className: "transition text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                                className: "transition text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-md hover:text-white",
                                 children: " Contact Us "
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27474,7 +27474,7 @@ const Header = ()=>{
                                 className: "text-xs text-gray-700 md:text-base",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "transition text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                                        className: "transition text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-md hover:text-white",
                                         children: "Cart"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
@@ -27506,7 +27506,7 @@ const Header = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "transition login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white",
+                            className: "transition login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-[0.10rem] hover:rounded-md hover:text-white",
                             onClick: ()=>{
                                 btnName === "login" ? setBtnName("logout") : setBtnName("login");
                             },
@@ -38685,17 +38685,123 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "mt-72 w-10/12 m-auto border border-orange-200 p-3 rounded-lg",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "hello world"
-            }, void 0, false, {
+                className: "text-center mb-6 text-4xl font-extrabold",
+                children: [
+                    "Contact ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-orange-500",
+                        children: "Me"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 4,
+                        columnNumber: 74
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Contact.js",
                 lineNumber: 4,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "this is Contact page"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "text-center",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-3",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                className: "font-bold text-orange-400",
+                                children: "Name :"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 6,
+                                columnNumber: 31
+                            }, undefined),
+                            " Swapna.Majji"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-3",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                className: "font-bold text-orange-400",
+                                children: "Address :"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 7,
+                                columnNumber: 31
+                            }, undefined),
+                            " Andhra Pradesh, India"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-3",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                className: "font-bold text-orange-400",
+                                children: "Email :"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 8,
+                                columnNumber: 30
+                            }, undefined),
+                            " swapnamajji2005@gmail.com"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-3",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                className: "font-bold text-orange-400",
+                                children: "LinkedIn :"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 9,
+                                columnNumber: 30
+                            }, undefined),
+                            " www.linkedin.com/in/swapna-majji-448232305"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-3",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                className: "font-bold text-orange-400",
+                                children: "Github :"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 10,
+                                columnNumber: 30
+                            }, undefined),
+                            " https://github.com/Swapnasruthi"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Contact.js",
                 lineNumber: 5,
                 columnNumber: 9

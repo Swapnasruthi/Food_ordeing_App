@@ -418,6 +418,10 @@ img, video {
   margin-top: 1.25rem;
 }
 
+.mt-72 {
+  margin-top: 18rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -625,6 +629,11 @@ img, video {
   border-color: rgb(134 239 172 / var(--tw-border-opacity));
 }
 
+.border-orange-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 215 170 / var(--tw-border-opacity));
+}
+
 .bg-\[\#117145\] {
   --tw-bg-opacity: 1;
   background-color: rgb(17 113 69 / var(--tw-bg-opacity));
@@ -732,6 +741,11 @@ img, video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -799,6 +813,16 @@ img, video {
   color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -825,19 +849,15 @@ img, video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-all {
-  transition-property: all;
-  transition-duration: .15s;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter, backdrop-filter;
   transition-duration: .15s;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
-.ease-in-out {
+.transition-all {
+  transition-property: all;
+  transition-duration: .15s;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -847,8 +867,8 @@ img, video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:rounded-lg:hover {
-  border-radius: .5rem;
+.hover\:rounded-md:hover {
+  border-radius: .375rem;
 }
 
 .hover\:bg-\[\#016034\]:hover {
@@ -873,6 +893,10 @@ img, video {
 
 .hover\:p-1:hover {
   padding: .25rem;
+}
+
+.hover\:p-\[0\.10rem\]:hover {
+  padding: .1rem;
 }
 
 .hover\:text-white:hover {

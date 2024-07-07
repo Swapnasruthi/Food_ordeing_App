@@ -29,10 +29,10 @@ export const Header= ()=>{
                         Online Status : {onlineStatus? "✅" :"🔴"}
                     </li> */}
                     <li className="mr-5 font-bold text-xs md:text-base ">
-                        <Link to="/" className="transition text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white"> Home </Link>
+                        <Link to="/" className="transition text-gray-700 hover:bg-orange-500 hover:p-1 hover:rounded-md hover:text-white"> Home </Link>
                     </li>
                     <li className="mr-5 font-bold text-xs md:text-base ">
-                        <Link  to="/contact" className="transition text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white"> Contact Us </Link>
+                        <Link  to="/contact" className="transition text-gray-700  hover:bg-orange-500 hover:p-1 hover:rounded-md hover:text-white"> Contact Us </Link>
                       
                     </li>
                     {/* <li className="mr-5  text-lg">
@@ -43,13 +43,13 @@ export const Header= ()=>{
                     </li> */}
                     <li className="mr-5 font-bold text-xs md:text-base">
                         <Link to="./cart" className="text-xs text-gray-700 md:text-base">
-                        <span className="transition text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white">Cart</span> 
+                        <span className="transition text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-md hover:text-white">Cart</span> 
                         {cartItems.length > 0 ? <i class="fa-solid fa-cart-shopping text-[#c26100]"></i> :
                         <i class="fa-solid fa-cart-shopping"></i>}
                         {/* ({cartItems.length} items) */}
                         </Link>
                     </li>
-                    <button className="transition login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-1 hover:rounded-lg hover:text-white"
+                    <button className="transition login font-bold text-gray-700 text-xs md:text-base  hover:bg-orange-500 hover:p-[0.10rem] hover:rounded-md hover:text-white"
                     onClick={()=> {
                         (btnName === "login")?
                         setBtnName("logout"):
