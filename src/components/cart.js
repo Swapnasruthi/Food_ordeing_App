@@ -45,7 +45,7 @@ const Cart = ()=>{
             (<div className="mt-10 flex justify-between py-6 p-2 border border-[#f1caa3] rounded-lg text-center items-center">
                 <p className="font-bold text-[#f4a04c] md:text-lg">Grand Total - {totalAmount}</p>
                 <button className="bg-white shadow-xl rounded-lg p-3 mr-7 transition-all text-green-600 font-bold md:text-lg hover:scale-105"
-                     > <Link to={"/payment"}>
+                     > <Link to={"/payment"} onClick={clearItemsFunc}>
                             Place order
                             </Link>
                 </button>

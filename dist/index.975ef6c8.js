@@ -43468,6 +43468,7 @@ const Cart = ()=>{
                                     " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/payment",
+                                        onClick: clearItemsFunc,
                                         children: "Place order"
                                     }, void 0, false, {
                                         fileName: "src/components/cart.js",
